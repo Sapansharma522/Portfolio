@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPAN SHARMA</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="css/phone.css">
+    <style>
+        img {
+            margin: auto;
+            height: 70px;
+            width: 70px;
+            border-radius: 200px;
+
+        }
+
+
+        #navbar {
+            display: flex;
+            position: sticky;
+            align-items: center;
+            top: 0px;
+
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 110%;
+            width: 101.3%;
+            z-index: -1;
+            top: -8px;
+            left: -8px;
+            opacity: 1;
+
+        }
+
+        #logo {
+
+            margin: 12px 20px;
+
+        }
+
+        #logo img {
+            margin: -18px -6px;
+        }
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+
+        }
+
+        #navbar ul li {
+
+            list-style: none;
+            font-size: 1.9rem;
+
+            cursor: pointer
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+
+            color: white;
+            background-color: blue;
+
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.1rem;
+            padding: 3px 200px;
+            height: 414px;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url('back1.jpg')no-repeat center center/cover;
+            height: 330%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+
+        }
+
+        .h-primary {
+            font-size: 3.2rem;
+            padding: 20px 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .h-secondary {
+            font-size: 2rem;
+            padding: 20px 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            padding: 6px 20px;
+            background-color: blueviolet;
+            border: 2px solid blue;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: black;
+            color: white;
+        }
+
+        #img1 {
+            height: 50px;
+            width: 50px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+
+        }
+
+        #services .box {
+            border: 2px solid red;
+            padding: 24px 6px;
+            margin: 3px 6px;
+            border-radius: 23px;
+            background-color: #eaabab;
+             width:33%;
+        }
+
+        #services .box img {
+            display: block;
+            margin: auto;
+            height: 128px;
+            width: 138px;
+            border-radius: 68px;
+
+
+        }
+
+        #sevices .box p {
+            font-family: 'Baloo Bhai 2', cursive;
+
+        }
+
+        #client-section {
+            height: 344px;
+
+
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('chow.jpg') no-repeat center center/cover;
+            width: 100%;
+            height: 57%;
+            z-index: -1;
+
+            left: 0px;
+
+
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients img {
+            height: 150px;
+            width: 150px;
+            border-radius: 0px;
+        }
+
+        .client-item {
+            padding: 13px;
+        }
+
+        #contact {
+            position: relative;
+
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            background: url('raw.jpg')no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            left: 0px;
+
+            margin: -6px;
+
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 9px 20px;
+            left: 0px;
+            margin: -13px;
+            width: 98%;
+            position: absolute;
+            text-align: center;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box form {
+            width: 40%;
+
+        }
+
+        #contact-box label {
+            font-size: 1.5rem;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 20px;
+            font-size: 1.2rem;
+
+        }
+
+        .sub {
+            display: block;
+            margin: auto;
+            padding: 2px 35px;
+            width: 200px;
+        }
+
+        .sub:hover {
+            background-color: black;
+            color: white;
+            border: 2px solid blue;
+        }
+
+        /* .container{
+               border: 2px solid rgb(135, 78, 189);
+               width: 900px;
+               display: block;
+               margin: auto;
+               border-radius: 10px;
+           }*/
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="SAPAN_IMG.png" alt="My Online Meal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Hi, I am SAPAN SHARMA</h1>
+        <p>I am a web developer and an enthusiast machine learning learner .I am currently an undergratuate in college.
+        </p>
+        <p.< /p>
+            <a href="https://github.com/Sapansharma522"><button class="btn">GITHUB LINK</button></a>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">My Projects</h1>
+        <div id="services">
+            <div class="box">
+                <img src="heartd.jpg" alt="">
+                <h2 class="h-secondary center">HEART DISEASE PREDICTION</h2>
+                <p class="center">In this project,a heart disease predicitng software is made using machine learning.The
+                    best ml algo is usedd as a pickle file and used to deploy it on the web.</p>
+            </div>
+            <div class="box">
+                <img src="hol.jpg" alt="">
+                <h2 class="h-secondary center">HOTEL REVIEW SYSTEM</h2>
+                <p class="center">In this project,a hotel review sytem website is made using microservies architectre.
+                </p>
+            </div>
+            <div class="box">
+                <img src="delivery.jpg" alt="">
+                <h2 class="h-secondary center">PIZZA DELIVERY SYSTEM</h2>
+                <p class="center">In this project,a pizza delivery system is made where we can compute the shortest
+                    route to our dsetination by Djiskstra algo.Plus we can compute in how many times Delivery will
+                    happen using first-fit algo.</p>
+                <p class="center">Language Used:C++</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
